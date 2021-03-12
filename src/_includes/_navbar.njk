@@ -1,7 +1,8 @@
 <nav>
-  <h1>Corona Culture</h1>
-  <p>The Digital Experience</p>
-  <ul>
-    <li>contact us</li>
+  <a href="/" class="logo"><img src="/assets/images/logo.png" alt="Corona Culture Logo" width="200"></a>
+  <ul class="nav-items">
+    <li class="nav-item {{ 'active' if '/artists' in page.url }}"><a href="/artists">Artists</a></li>
+    <li class="nav-item {{ 'active' if '/digital-experience' in page.url }}"><a href="/digital-experience">Digital Experience</a></li>
+    <li class="nav-item {{ 'active' if '/contact' in page.url }}"><a href="/contact">Contact Us</a></li>
   </ul>
 </nav>

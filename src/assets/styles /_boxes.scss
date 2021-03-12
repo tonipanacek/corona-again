@@ -1,0 +1,26 @@
+.cc-box {
+  border: 2px solid black;
+  background: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.close {
+  border-bottom: 2px solid black;
+  &-sm {
+    img { height: 20px; }
+  }
+  &-md {
+    img { height: 30px; }
+  }
+  &-lg {
+    img { height: 40px; }
+  }
+}
+
+.box-content {
+  padding: 1rem;
+}
+

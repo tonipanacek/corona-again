@@ -1,0 +1,17 @@
+{% extends "./default.njk" %}
+
+{% block main %}
+<main class="main">
+  <div class="artists-list">
+    <ul>
+    {% for artist in artists %}
+      <li>{{ artist.name }}
+        {% if artist.url %} ----- <a href="{{ artist.url }}" target="_blank">website</a>{% endif %}
+        {% if artist.social %} +++++ <a href="{{ artist.social }}" target="_blank">social</a>{% endif %}
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+</main>
+
+{% endblock %}

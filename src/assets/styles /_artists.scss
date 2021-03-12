@@ -1,0 +1,14 @@
+.artists-list {
+  align-self: flex-start;
+  padding: 2rem 4rem;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    a,
+    a:visited {
+      color: black;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{% extends "./default.njk" %}
+
+{% block main %}
+<main class="main">
+  <div class="video-bg">
+    <video autoplay playsinline>
+      <source src="/assets/videos/CC-{{ video }}.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="cc-box register hidden">
+    <div class="close close-md"><img src="/assets/images/close.png" alt="close-button"></div>
+    <div class="form form-register">
+      <form action="/" name="register" method="post" data-netlify="true">
+        <input type="text" name="name" required placeholder="name" class="form-input">
+        <input type="email" name="email" required placeholder="email*" class="form-input">
+        <p>*so we can notify you about upcoming in-person exhibition</p>
+        <div class="submit-area">
+          <button type="submit" class="submit-button">enter</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+
+{% endblock %}

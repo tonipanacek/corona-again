@@ -14,6 +14,8 @@ module.exports = (config) => {
   config.addPassthroughCopy('src/robots.txt');
   config.addPassthroughCopy('src/favicon.ico');
   config.addPassthroughCopy('src/assets/images');
+  config.addPassthroughCopy('src/assets/fonts');
+  config.addPassthroughCopy('src/assets/videos');
 
   // Minify eleventy pages in production
   if (process.env.NODE_ENV === 'production') {

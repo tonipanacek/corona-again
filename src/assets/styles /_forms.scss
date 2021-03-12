@@ -1,0 +1,60 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 3rem;
+  }
+  @include respond-to('large') {
+    background: transparent;
+    border: 0px;
+  }
+  form {
+    width: 75%;
+    input, textarea {
+      box-sizing: border-box;
+      border: 2px solid black;
+    }
+  }
+  .form-input {
+    font-family: inherit;
+    text-transform: lowercase;
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;
+  }
+  .submit-area {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .submit-button {
+    background: white;
+    padding: .5em 2em;
+    border: 2px solid black;
+    font-family: inherit;
+    text-transform: lowercase;
+    font-weight: bold;
+    margin-top: 1rem;
+    &:hover {
+      background: black;
+      color: white;
+      cursor: pointer;
+    }
+  }
+  &-register {
+    padding: 4rem 0;
+    p {
+      font-size: .8rem;
+    }
+  }
+  &-contact {
+    form {
+      width: 60%;
+    }
+  }
+}
+

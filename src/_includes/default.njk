@@ -5,8 +5,9 @@
   </head>
   <body class="{{ bodyClass }}">
     {% include "_navbar.njk" %}
-    <main>
+    {% block main %}
       {{ content | safe }}
-    </main>
+    {% endblock %}
+    {% include "_footer.njk" %}
   </body>
 </html>

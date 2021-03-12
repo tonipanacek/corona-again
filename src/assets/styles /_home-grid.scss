@@ -1,0 +1,78 @@
+.middle {
+  flex: 1 0 auto;
+  max-height: 90vh;
+  display: grid;
+  width: 60%;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+  gap: 0px 0px;
+  grid-template-areas:
+    ". when when when when . . . . . . . . . . ."
+    ". when when when when . . . . . . about about about about about"
+    ". . . . . . . . . . . about about about about about"
+    ". . cc cc cc cc cc cc cc . . about about about about about"
+    ". . cc cc cc cc cc cc cc . . about about about about about"
+    ". . cc cc cc cc cc cc cc . . about about about about about"
+    ". . cc cc cc cc cc cc cc . . about about about about about"
+    ". . cc cc cc cc cc cc cc . . about about about about about"
+    ". . . . . . . . . . . about about about about about"
+    ". . . . . . . . . . . about about about about about"
+    "wtf wtf wtf wtf wtf wtf . . . . . about about about about about"
+    "wtf wtf wtf wtf wtf wtf . where where where . about about about about about"
+    "wtf wtf wtf wtf wtf wtf . where where where . about about about about about"
+    "wtf wtf wtf wtf wtf wtf . . . . . about about about about about"
+    "wtf wtf wtf wtf wtf wtf . . . . . . . . . .";
+}
+
+.when { grid-area: when; }
+
+.cc { grid-area: cc; }
+
+.wtf { grid-area: wtf; }
+
+.where { grid-area: where; }
+
+.about { grid-area: about; }
+
+@media all and (-ms-high-contrast:none) {
+  .grid-container {
+    display: -ms-grid;
+    -ms-grid-columns: repeat(16, 1fr);
+    -ms-grid-rows: repeat(16, 1fr);
+  }
+
+  .when {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 5;
+  }
+
+  .cc {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 7;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 8;
+  }
+
+  .wtf {
+    -ms-grid-row: 12;
+    -ms-grid-row-span: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+
+  .where {
+    -ms-grid-row: 13;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 8;
+    -ms-grid-column-span: 3;
+  }
+
+  .about {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 14;
+    -ms-grid-column: 12;
+    -ms-grid-column-span: 5;
+  }
+}
