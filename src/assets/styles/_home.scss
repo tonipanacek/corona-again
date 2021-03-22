@@ -1,5 +1,7 @@
 .flex-content {
   display: flex;
+  height: 100%;
+  margin-top: 88px;
 }
 
 .logo {
@@ -61,9 +63,18 @@
   height: 75%;
 }
 
+.when .text {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 75%;
+  font-size: 1.75rem;
+}
+
 .image-container {
   height: 80%;
   width: 100%;
+  display: flex;
   img {
     margin: 0 auto;
     object-fit: cover;

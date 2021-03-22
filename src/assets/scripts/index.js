@@ -1,7 +1,14 @@
-const registerForm = document.querySelector('.register');
+import { initBarba } from './init_barba.js';
+import { handleRegisterFormSubmission } from './register_form.js';
 
-if (registerForm) {
-  setTimeout(() => {
-    registerForm.classList.remove('hidden');
-  }, 7000)
+// initBarba();
+handleRegisterFormSubmission();
+
+const videoDiv = document.querySelector('#video-experience');
+const nav = document.querySelector('.navbar');
+if (videoDiv) {
+  nav.classList.add('hidden');
+} else {
+  nav.classList.remove('hidden');
 }
+

@@ -21,6 +21,7 @@
   }
   .form-input {
     font-family: inherit;
+    font-size: inherit;
     text-transform: lowercase;
     width: 100%;
     padding: 1em;
@@ -45,6 +46,7 @@
       cursor: pointer;
     }
   }
+
   &-register {
     padding: 4rem 0;
     p {
@@ -53,8 +55,18 @@
   }
   &-contact {
     form {
-      width: 60%;
+      width: 60ch;
+      max-width: 80%;
     }
   }
 }
 
+.register {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.transparent {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}

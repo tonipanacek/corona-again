@@ -1,0 +1,53 @@
+.video-bg {
+  display: none;
+  @include respond-to('large') {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+  }
+  video, iframe {
+    position: absolute;
+    top: 88px;
+    width: 100%;
+    height: calc(100vh - 88px);
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+
+
+:root {
+  --video-width: 100vw;
+  --video-height: 100vh;
+}
+@media (min-aspect-ratio: 16/9) {
+  :root {
+    --video-height: 56.25vw;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  :root {
+    --video-width: 177.78vh;
+  }
+}
+
+.video-background {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: var(--video-height);
+}
+.video-background iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: var(--video-width);
+  height: var(--video-height);
+  transform: translate(-50%, -50%);
+}
