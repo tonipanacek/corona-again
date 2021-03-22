@@ -13,7 +13,6 @@ const handleRegisterFormSubmission = () => {
   // }
 
   if (registerForm) {
-    console.log('hello toni')
     setTimeout(() => {
       document.querySelector('.register').classList.remove('transparent');
     }, 7000)
