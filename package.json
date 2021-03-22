@@ -42,6 +42,7 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
-    "@barba/core": "^2.9.7"
+    "@barba/core": "^2.9.7",
+    "@vimeo/player": "^2.15.0"
   }
 }
