@@ -1,13 +1,28 @@
-<header>
-  <nav class="navbar">
-    <a href="/" class="logo"><img src="/assets/images/logo.png" alt="Corona Culture Logo" width="200"></a>
-    <ul class="nav-items">
-      <li class="nav-item {{ 'active' if '/artists' in page.url }}"><a href="/artists">Artists</a></li>
-      <li class="nav-item {{ 'active' if '/digital-experience' in page.url }}"><a href="/digital-experience">Digital Experience</a></li>
-      <li class="nav-item {{ 'active' if '/contact' in page.url }}"><a href="/contact">Contact Us</a></li>
-{#       <li class="nav-item"><a href="/artists">Artists</a></li>
-      <li class="nav-item"><a href="/digital-experience">Digital Experience</a></li>
-      <li class="nav-item"><a href="/contact">Contact Us</a></li> #}
-    </ul>
-  </nav>
-</header>
+{%  if chapter %}
+  <header class="experience-header">
+    <nav class="experience-navbar">
+      <a href="/" class="logo"><img src="/assets/images/logo.png" alt="Corona Culture Logo" width="200"></a>
+      <p class="title">The Digital Experience</p>
+      <ul class="nav-items">
+        {% if prev %}
+          <li class="back"><a href="/digital-experience/{{ prev }}"><</a></li>
+        {%  endif %}
+        <li class="current-chapter">{{ chapter }}</li>
+        {% if next %}
+          <li class="next"><a href="/digital-experience/{{ next }}">></a></li>
+        {%  endif %}
+      </ul>
+    </nav>
+  </header>
+{% else %}
+  <header>
+    <nav class="navbar">
+      <a href="/" class="logo"><img src="/assets/images/logo.png" alt="Corona Culture Logo" width="200"></a>
+      <ul class="nav-items">
+        <li class="nav-item {{ 'active' if '/artists' in page.url }}"><a href="/artists">Artists</a></li>
+        <li class="nav-item {{ 'active' if '/digital-experience' in page.url }}"><a href="/digital-experience">Digital Experience</a></li>
+        <li class="nav-item {{ 'active' if '/contact' in page.url }}"><a href="/contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+{%  endif  %}

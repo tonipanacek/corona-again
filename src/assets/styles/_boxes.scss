@@ -24,3 +24,31 @@
   padding: 1rem;
 }
 
+.more {
+  width: 30ch;
+  height: 20ch;
+  z-index: 10;
+  position: absolute;
+  top: 15%;
+  right: 25%;
+  transition: z-index 0.3s ease;
+}
+
+.go-link {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a {
+    font-size: 3rem;
+    padding: .5rem 3rem;
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    text-transform: uppercase;
+    &:hover {
+      color: white;
+      background: black;
+    }
+  }
+}

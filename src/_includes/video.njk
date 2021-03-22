@@ -2,12 +2,12 @@
 
 {% block main %}
 <main class="main">
-  <div data-vimeo-id="{{ videoID }}" class="video-background" class="video-experience" id={{ divID }}></div>
+  <div data-video-id="{{ videoID }}" class="video-background video-experience" id="{{ divID }}" data-end-time="{{ endTime }}"></div>
 
-  <div class="cc-box hidden">
+  <div class="cc-box more hidden">
     <div class="close close-md"><img src="/assets/images/close.png" alt="close-button"></div>
-    <div class="">
-      <p>More?</p>
+    <div class="go-link">
+      <a href="/digital-experience/{{ next }}">Go</a>
     </div>
   </div>
 </main>
