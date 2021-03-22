@@ -1,14 +1,14 @@
 {% extends "./default.njk" %}
 
 {% block main %}
-<main class="main">
-  <div data-video-id="{{ videoID }}" class="video-background video-experience" id="{{ divID }}"></div>
+  <main class="main">
+    <div data-video-id="{{ videoID }}" class="video-background video-experience" id="{{ divID }}"></div>
 
-  <div class="cc-box more hidden">
-    <div class="close close-md"><img src="/assets/images/close.png" alt="close-button"></div>
-    <div class="go-link">
-      <a href="/digital-experience/{{ next }}">Go</a>
+    <div class="cc-box more hidden">
+      <div class="close close-md"><img src="/assets/images/close.png" alt="close-button"></div>
+      <div class="go-link">
+        <a href="/digital-experience/{{ next }}">Go</a>
+      </div>
     </div>
-  </div>
-</main>
+  </main>
 {% endblock %}
