@@ -29,9 +29,27 @@
   height: 20ch;
   z-index: 10;
   position: absolute;
-  top: 15%;
-  right: 25%;
   transition: z-index 0.3s ease;
+  &-chapter-1 {
+    top: 15%;
+    right: 25%;
+  }
+  &-chapter-2 {
+    top: 27%;
+    right: 23%;
+  }
+  &-chapter-3 {
+    top: 43%;
+    right: 25%;
+  }
+  &-chapter-4 {
+    top: 45%;
+    right: 55%;
+  }
+  &-chapter-5 {
+    top: 15%;
+    right: 25%;
+  }
 }
 
 .go-link {
