@@ -6,7 +6,6 @@ const handleVimeo = () => {
   const videoHeader = document.querySelector('.experience-header');
   if (videoDiv) {
     setTimeout(() => videoHeader.classList.add('fade-out'), 2000);
-    const endtime = parseInt(videoDiv.dataset.endTime, 10);
     const videoName = videoDiv.id;
     const player = new Player(videoName, {
         id: videoDiv.dataset.videoId,
