@@ -19,7 +19,6 @@ const handleRegisterFormSubmission = () => {
   const handleClick = (e) => {
     e.preventDefault();
     changeOutVideo();
-    // console.log(e);
     setTimeout(() => {
       location.replace(e.target.href);
     }, 2000);
@@ -27,7 +26,7 @@ const handleRegisterFormSubmission = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    let formData = new FormData(registerForm[0])
+    let formData = new FormData(registerForm)
     fetch('/digital-experience/chapter-1', {
       method: 'POST',
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
