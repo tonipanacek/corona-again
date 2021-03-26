@@ -33,7 +33,7 @@ const handleRegisterFormSubmission = () => {
       body: new URLSearchParams(formData).toString()
     }).then(() => {
       console.log('Form successfully submitted')
-      document.cookie = 'cc-registered=true'
+      // document.cookie = 'cc-registered=true'
     }).catch((error) => alert(error))
   }
 
