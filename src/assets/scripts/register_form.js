@@ -26,7 +26,7 @@ const handleRegisterFormSubmission = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    let formData = new FormData(registerForm)
+    let formData = new FormData(registerForm.firstElementChild)
     fetch('/digital-experience/chapter-1', {
       method: 'POST',
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
