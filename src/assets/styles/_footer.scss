@@ -8,14 +8,21 @@ footer {
     justify-content: space-between;
   }
   .social-icons {
-    img { width: 30px; }
+    img {
+      width: 30px;
+    }
   }
   .gdpr {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
     flex-wrap: wrap;
     flex: 1 0 auto;
     padding: 0 2rem;
+    @include respond-to('large') {
+      flex-direction: row;
+    }
     a {
       color: black;
       text-decoration: none;
@@ -25,9 +32,13 @@ footer {
   .sponsors {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     width: 66%;
-    img {
-      width: 33%;
+    @include respond-to('large') {
+      flex-direction: row;
+      img {
+        width: 33%;
+      }
     }
   }
 }
