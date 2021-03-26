@@ -8,38 +8,44 @@ const handleRegisterFormSubmission = () => {
   const changeOutVideo = () => {
     const loadingSrc = '/assets/videos/loading.mp4';
     alreadyRegisteredBox.classList.add('transparent');
+    registerBox.classList.add('transparent');
     setTimeout(() => {
       videoElement.firstElementChild.src = loadingSrc;
       videoElement.loop = true;
       videoElement.load();
       videoElement.play();
-    }, 500)
+    }, 500);
   }
 
   const handleClick = (e) => {
     e.preventDefault();
     changeOutVideo();
     setTimeout(() => {
-      location.replace(e.target.href);
-    }, 2000);
+      location.href = e.target.href;
+    }, 3000);
   }
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    let formData = new FormData(registerForm.firstElementChild)
+    let formData = new FormData(registerForm.firstElementChild  )
     fetch('/digital-experience/chapter-1', {
       method: 'POST',
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString()
     }).then(() => {
-      console.log('Form successfully submitted')
-      // document.cookie = 'cc-registered=true'
+      console.log('hello');
+      document.cookie = 'cc-registered=true';
+      changeOutVideo();
+      setTimeout(() => {
+        location.replace(registerForm.firstElementChild.action);
+      }, 2000);
     }).catch((error) => alert(error))
   }
 
   if (registerForm) {
     if (document.cookie.split('; ').find(row => row.startsWith('cc-registered'))) {
       registerBox.classList.add('hidden');
+      alreadyRegisteredBox.classList.remove('hidden');
       setTimeout(() => {
         alreadyRegisteredBox.classList.remove('transparent');
       }, 7000);
