@@ -1,0 +1,33 @@
+footer {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  flex-direction: column;
+  @include respond-to('large') {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .social-icons {
+    img { width: 30px; }
+  }
+  .gdpr {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex: 1 0 auto;
+    padding: 0 2rem;
+    a {
+      color: black;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+  .sponsors {
+    display: flex;
+    justify-content: space-between;
+    width: 66%;
+    img {
+      width: 33%;
+    }
+  }
+}

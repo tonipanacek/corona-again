@@ -1,40 +1,102 @@
 .middle {
-  height: 90vh;
+  min-height: 90vh;
   flex: 1 0 auto;
   display: grid;
   width: 60%;
-  grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(16, 1fr);
-  gap: 0px 0px;
-  grid-template-areas:
-    ". when when when when . . . . . . . . . . ."
-    ". when when when when . . . . . . about about about about about"
-    ". . . . . . . . . . . about about about about about"
-    ". . cc cc cc cc cc cc cc . . about about about about about"
-    ". . cc cc cc cc cc cc cc . . about about about about about"
-    ". . cc cc cc cc cc cc cc . . about about about about about"
-    ". . cc cc cc cc cc cc cc . . about about about about about"
-    ". . cc cc cc cc cc cc cc . . about about about about about"
-    ". . cc cc cc cc cc cc cc . . about about about about about"
-    ". . . . . . . . . . . about about about about about"
-    "wtf wtf wtf wtf wtf wtf . . . . . about about about about about"
-    "wtf wtf wtf wtf wtf wtf . where where where . about about about about about"
-    "wtf wtf wtf wtf wtf wtf . where where where . about about about about about"
-    "wtf wtf wtf wtf wtf wtf . . . . . about about about about about"
-    "wtf wtf wtf wtf wtf wtf . . . . . about about about about about"
+  margin: 0 4rem;
+  @include respond-to('large') {
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    gap: 0px 0px;
+    grid-template-areas:
+      ". when when when when . . . . . . . . . . ."
+      ". when when when when . . . . . . about about about about about"
+      ". . . . . . . . . . . about about about about about"
+      ". . cc cc cc cc cc cc . . . about about about about about"
+      ". . cc cc cc cc cc cc . . . about about about about about"
+      ". . cc cc cc cc cc cc . . . about about about about about"
+      ". . cc cc cc cc cc cc . . . about about about about about"
+      ". . cc cc cc cc cc cc . . . about about about about about"
+      ". . cc cc cc cc cc cc . . . about about about about about"
+      ". . . . . . . . . . . about about about about about"
+      "wtf wtf wtf wtf wtf . . . . . . about about about about about"
+      "wtf wtf wtf wtf wtf . . where where where . about about about about about"
+      "wtf wtf wtf wtf wtf . . where where where . about about about about about"
+      "wtf wtf wtf wtf wtf . . . . . . about about about about about"
+      "wtf wtf wtf wtf wtf . . . . . . about about about about about"
+  }
+   @include respond-to('xl') {
+    margin: 0;
+    grid-template-areas:
+      ". when when when when . . . . . . . . . . ."
+      ". when when when when . . . . . . about about about about about"
+      ". . . . . . . . . . . about about about about about"
+      ". . cc cc cc cc cc cc cc . . about about about about about"
+      ". . cc cc cc cc cc cc cc . . about about about about about"
+      ". . cc cc cc cc cc cc cc . . about about about about about"
+      ". . cc cc cc cc cc cc cc . . about about about about about"
+      ". . cc cc cc cc cc cc cc . . about about about about about"
+      ". . cc cc cc cc cc cc cc . . about about about about about"
+      ". . . . . . . . . . . about about about about about"
+      "wtf wtf wtf wtf wtf wtf . . . . . about about about about about"
+      "wtf wtf wtf wtf wtf wtf . where where where . about about about about about"
+      "wtf wtf wtf wtf wtf wtf . where where where . about about about about about"
+      "wtf wtf wtf wtf wtf wtf . . . . . about about about about about"
+      "wtf wtf wtf wtf wtf wtf . . . . . about about about about about"
+  }
 }
 
-.when { grid-area: when; }
+.about {
+  order: 2;
+  @include respond-to('large') {
+    grid-area: about;
+  }
+}
 
-.cc { grid-area: cc; }
+.when {
+  order: 1;
+  @include respond-to('large') {
+    grid-area: when;
+  }
+}
 
-.wtf { grid-area: wtf; }
+.where {
+  order: 3;
+  @include respond-to('large') {
+    grid-area: where;
+  }
+}
 
-.where { grid-area: where; }
+.cc {
+  display: none;
+  @include respond-to('large') {
+    display: block;
+    grid-area: cc;
+    .image-container {
+      background-image: url('/assets/images/corona-culture.png');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
 
-.about { grid-area: about; }
+.wtf {
+  display: none;
+  @include respond-to('large') {
+    display: block;
+    grid-area: wtf;
+    .image-container {
+      background-image: url('/assets/images/wtf.png');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
 
-@media all and (-ms-high-contrast:none) {
+
+@media all and (-ms-high-contrast:none) and (min-width: 925px){
   .grid-container {
     display: -ms-grid;
     -ms-grid-columns: repeat(16, 1fr);

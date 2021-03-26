@@ -3,7 +3,7 @@
 {% block main %}
 <main class="main jc-center mt-88">
   <div class="video-bg">
-    <video autoplay playsinline>
+    <video autoplay playsinline id="digital-experience-bg-video">
       <source src="/assets/videos/opening.mp4" type="video/mp4">
     </video>
   </div>
@@ -14,11 +14,19 @@
       <form action="/digital-experience/chapter-1" name="register" method="POST" data-netlify="true">
         <input type="text" name="name" required placeholder="name" class="form-input">
         <input type="email" name="email" required placeholder="email*" class="form-input">
-        <p>*so we can notify you about upcoming in-person exhibition</p>
+        <p>*so we can notify you about the upcoming exhibition + program</p>
         <div class="submit-area">
           <button type="submit" class="submit-button">enter</button>
         </div>
       </form>
+    </div>
+  </div>
+
+  <div class="cc-box already-registered transparent">
+    <div class="close close-md"><img src="/assets/images/close.png" alt="close-button"></div>
+    <div class="form registered-message">
+      <p>You have previously registered for Corona Culture - the Digital Experience</p>
+      <a href="/digital-experience/chapter-1" id="begin-again-btn">Begin again?</a>
     </div>
   </div>
 </main>

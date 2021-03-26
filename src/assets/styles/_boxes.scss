@@ -70,3 +70,14 @@
     }
   }
 }
+
+.registered-message {
+  padding: 4rem;
+  a {
+    padding: .5rem 1rem;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    text-transform: uppercase;
+  }
+}

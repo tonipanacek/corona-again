@@ -4,13 +4,11 @@
   align-items: center;
   h1 {
     text-transform: uppercase;
-    // font-size: 1.5rem;
     font-weight: normal;
     margin-bottom: 3rem;
     margin-top: 0;
   }
   @include respond-to('large') {
-    background: transparent;
     border: 0px;
   }
   form {

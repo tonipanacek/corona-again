@@ -13,7 +13,7 @@
 
 .left-sidebar, .right-sidebar {
   display: none;
-  @include respond-to('large') {
+  @include respond-to('xl') {
     width: 9%;
     display: flex;
     align-items: center;
@@ -54,13 +54,16 @@
 }
 
 .where .text {
-  font-family: Arial;
-  text-decoration: underline;
   font-size: 1.2rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
   height: 75%;
+  a {
+    font-family: Arial;
+    color: black;
+    text-decoration: underline;
+  }
 }
 
 .when .text {
@@ -68,7 +71,7 @@
   align-items: center;
   justify-content: space-around;
   height: 75%;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 
 .image-container {
