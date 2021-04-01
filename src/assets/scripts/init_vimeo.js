@@ -7,22 +7,28 @@ const handleVimeo = () => {
   if (videoDiv) {
     setTimeout(() => videoHeader.classList.add('fade-out'), 2000);
     const videoName = videoDiv.id;
+    const endTime = videoDiv.dataset.endTime;
+    console.log(endTime);
     const player = new Player(videoName, {
         id: videoDiv.dataset.videoId,
         autoplay: true
     });
-    player.on('ended', function(data) {
-      if (videoName !== 'chapter-5') {
-        goBtn.classList.remove('hidden');
-      }
-    })
     player.on('timeupdate', function(data) {
       if (videoName === 'chapter-5') {
-        if (data.seconds >= 128) {
+        if (data.seconds >= endTime) {
+          player.pause()
+        } else if (data.seconds >= 128) {
           goBtn.classList.remove('hidden');
+        } else {
+          goBtn.classList.add('hidden');
         }
       } else {
-        goBtn.classList.add('hidden');
+        if (data.seconds >= endTime) {
+          player.pause();
+          goBtn.classList.remove('hidden');
+        } else {
+          goBtn.classList.add('hidden');
+        }
       }
     })
   }

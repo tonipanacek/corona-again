@@ -2,13 +2,31 @@
 
 {% block main %}
   <main class="main">
-    <div data-video-id="{{ videoID }}" class="video-background video-experience" id="{{ divID }}"></div>
+    <div data-video-id="{{ videoID }}" class="video-background video-experience" id="{{ divID }}" data-end-time="{{ endTime }}"></div>
 
-    <div class="cc-box more more-{{ divID }} hidden">
-      <div class="close close-md"><img src="/assets/images/close.png" alt="close-button"></div>
-      <div class="go-link">
-        <a href="/digital-experience/{{ next }}">Go</a>
+    {% if divID === 'chapter-5' %}
+      <div class="cc-box more more-{{ divID }} hidden">
+        <div class="close close-md"><img src="/assets/images/close.png" alt="close-button"></div>
+        <div class="form form-feedback">
+          <form action="/" name="feedback" method="POST" data-netlify="true">
+            <h2>What kind of world do we want to live in? </h2>
+            <p>enter a sentence that will get sent to wtf@corona-culture.org</p>
+            <br>
+            <textarea rows="4" name="sentence" required placeholder="???" class="form-input"></textarea>
+            <div class="submit-area">
+              <button type="submit" class="submit-button">submit</button>
+            </div>
+          </form>
+          <a href="/">or go home</a>
+        </div>
       </div>
-    </div>
+    {% else %}
+      <div class="cc-box more more-{{ divID }} hidden">
+        <div class="close close-md"><img src="/assets/images/close.png" alt="close-button"></div>
+        <div class="go-link">
+          <a href="/digital-experience/{{ next }}">Go</a>
+        </div>
+      </div>
+    {% endif %}
   </main>
 {% endblock %}
