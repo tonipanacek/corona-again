@@ -8,12 +8,13 @@ footer {
     justify-content: space-between;
   }
   .social-icons {
-    img {
-      width: 30px;
+    display: none;
+    @include respond-to('large') {
+      display: block;
     }
   }
   .gdpr {
-    display: flex;
+    display: none;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
@@ -21,6 +22,7 @@ footer {
     flex: 1 0 auto;
     padding: 0 2rem;
     @include respond-to('large') {
+      display: flex;
       flex-direction: row;
     }
     a {
@@ -40,5 +42,11 @@ footer {
         width: 33%;
       }
     }
+  }
+}
+
+.social-icons {
+  img {
+    width: 30px;
   }
 }

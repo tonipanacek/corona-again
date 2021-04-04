@@ -8,6 +8,10 @@
     font-weight: normal;
     margin-bottom: 3rem;
     margin-top: 0;
+    font-size: 1.5rem;
+    @include respond-to('large') {
+      font-size: 2rem;
+    }
   }
   @include respond-to('large') {
     border: 0px;
@@ -40,6 +44,7 @@
     text-transform: lowercase;
     font-weight: bold;
     margin-top: 1rem;
+    font-size: 1rem;
     &:hover {
       background: black;
       color: white;
@@ -56,8 +61,11 @@
   &-contact {
     padding: 2rem 4rem;
     form {
-      width: 60ch;
-      max-width: 80%;
+      width: 25ch;
+      @include respond-to('large') {
+        max-width: 80%;
+        width: 60ch;
+      }
     }
   }
   &-feedback {

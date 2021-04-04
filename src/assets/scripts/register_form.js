@@ -33,8 +33,13 @@ const handleRegisterFormSubmission = () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString()
     }).then(() => {
-      console.log('hello');
-      document.cookie = 'cc-registered=true';
+      const oneMonth = new Date(
+        new Date().getFullYear(),
+        new Date().getMonth() + 1,
+        new Date().getDate()
+      ).toUTCString();
+      console.log(oneMonth);
+      document.cookie = `cc-registered=true;expires=${oneMonth}`;
       changeOutVideo();
       setTimeout(() => {
         location.replace(registerForm.firstElementChild.action);

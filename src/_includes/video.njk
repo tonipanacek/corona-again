@@ -5,9 +5,9 @@
     <div data-video-id="{{ videoID }}" class="video-background video-experience" id="{{ divID }}" data-end-time="{{ endTime }}"></div>
 
     {% if divID === 'chapter-5' %}
-      <div class="cc-box more more-{{ divID }} hidden">
+      <div class="cc-box more more-{{ divID }}">
         <div class="close close-md"><img src="/assets/images/close.png" alt="close-button"></div>
-        <div class="form form-feedback">
+        <div class="form form-feedback hidden">
           <form action="/" name="feedback" method="POST" data-netlify="true">
             <h2>What kind of world do we want to live in? </h2>
             <p>enter a sentence that will get sent to wtf@corona-culture.org</p>
@@ -17,7 +17,18 @@
               <button type="submit" class="submit-button">submit</button>
             </div>
           </form>
-          <a href="/">or go home</a>
+          <a href="/">home</a>
+        </div>
+        <div class="after-text">
+          <div>
+            <p>Thank your for taking part in this journey!</p>
+            <p>Stay tuned and join us for more.</p>
+          </div>
+          <a href="/artists">Artist list</a>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/coronacultureproject" target="_blank"><img src="/assets/images/facebook.png" alt="facebook logo"></a>
+            <a href="https://www.instagram.com/corona.culture/" target="_blank"><img src="/assets/images/instagram.png" alt="instagram logo"></a>
+          </div>
         </div>
       </div>
     {% else %}

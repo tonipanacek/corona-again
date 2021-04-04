@@ -1,13 +1,14 @@
 {% extends "./default.njk" %}
 
 {% block main %}
-<main class="main mt-88">
+<main class="main header-offset">
   <div class="artists-list">
+    <h1>Artists</h1>
     <ul>
     {% for artist in artists %}
       <li>{{ artist.name }}
-        {% if artist.url %} ----- <a href="{{ artist.url }}" target="_blank">website</a>{% endif %}
-        {% if artist.social %} +++++ <a href="{{ artist.social }}" target="_blank">social</a>{% endif %}
+        {% if artist.url %} <span>----- <a href="{{ artist.url }}" target="_blank">website</a></span>{% endif %}
+        {% if artist.social %} <span>+++++ <a href="{{ artist.social }}" target="_blank">social</a></span>{% endif %}
       </li>
     {% endfor %}
     </ul>

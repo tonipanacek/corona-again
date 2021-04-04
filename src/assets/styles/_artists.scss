@@ -1,7 +1,19 @@
 .artists-list {
-  align-self: flex-start;
-  padding: 2rem 4rem;
-
+  h1 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    @include respond-to('large') {
+      display: none;
+    }
+  }
+  padding: 1rem 2rem;
+  text-align: center;
+  @include respond-to('large') {
+    align-self: flex-start;
+    padding: 2rem 4rem;
+    text-align: left;
+  }
   ul {
     list-style: none;
     padding: 0;
@@ -9,6 +21,19 @@
     a,
     a:visited {
       color: black;
+    }
+    span {
+      display: block;
+      @include respond-to('large') {
+        display: inline;
+        margin-left: 0;
+      }
+    }
+    li {
+      margin-bottom: 1rem;
+      @include respond-to('large') {
+        margin-bottom: 0;
+      }
     }
   }
 }

@@ -1,7 +1,7 @@
 {%  if chapter %}
   <header class="experience-header">
     <nav class="experience-navbar">
-      <a href="/" class="logo"><img src="/assets/images/logo.png" alt="Corona Culture Logo" width="200"></a>
+      <a href="/" class="logo"><img src="/assets/images/logo.png" alt="Corona Culture Logo"></a>
       <p class="title">The Digital Experience</p>
       <ul class="nav-items">
         {% if prev %}
@@ -17,11 +17,26 @@
 {% else %}
   <header>
     <nav class="navbar">
-      <a href="/" class="logo"><img src="/assets/images/logo.png" alt="Corona Culture Logo" width="200"></a>
+      <button id="mobile-menu">menu</button>
+      <a href="/" class="logo"><img src="/assets/images/logo.png" alt="Corona Culture Logo"></a>
       <ul class="nav-items">
         <li class="nav-item {{ 'active' if '/artists' in page.url }}"><a href="/artists">Artists</a></li>
         <li class="nav-item {{ 'active' if '/digital-experience' in page.url }}"><a href="/digital-experience">Digital Experience</a></li>
         <li class="nav-item {{ 'active' if '/contact' in page.url }}"><a href="/contact">Contact Us</a></li>
+      </ul>
+
+      <ul class="mobile-nav-items hidden">
+        <li class="nav-item {{ 'active' if '/artists' in page.url }}"><a href="/artists">Artists</a></li>
+        <li class="nav-item {{ 'active' if '/digital-experience' in page.url }}"><a href="/digital-experience">Digital Experience</a></li>
+        <li class="nav-item {{ 'active' if '/contact' in page.url }}"><a href="/contact">Contact Us</a></li>
+
+        <li id="imprint" class="nav-item {{ 'active' if '/imprint' in page.url }}"><a href="/imprint">Imprint</a></li>
+        <li id="privacy" class="nav-item {{ 'active' if '/privacy' in page.url }}"><a href="/privacy">Data Privacy</a></li>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/coronacultureproject" target="_blank"><img src="/assets/images/facebook.png" alt="facebook logo"></a>
+          <a href="https://www.instagram.com/corona.culture/" target="_blank"><img src="/assets/images/instagram.png" alt="instagram logo"></a>
+        </div>
+        <button id="close-menu"><img src="/assets/images/close.png" alt="close-button"></button>
       </ul>
     </nav>
   </header>
