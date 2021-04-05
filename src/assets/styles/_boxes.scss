@@ -85,10 +85,13 @@
   @include respond-to('large') {
     display: block;
   }
+  #begin-again-btn {
+    margin-top: 2rem;
+  }
 }
 
 .mobile-box {
-  height: 60vh;
+  height: 40ch;
   width: 80%;
   .mobile-message {
     justify-content: center;
