@@ -33,13 +33,8 @@ const handleRegisterFormSubmission = () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString()
     }).then(() => {
-      const oneMonth = new Date(
-        new Date().getFullYear(),
-        new Date().getMonth() + 1,
-        new Date().getDate()
-      ).toUTCString();
-      console.log(oneMonth);
-      document.cookie = `cc-registered=true;expires=${oneMonth}`;
+      localStorage.setItem('cc-registered', 'true');
+      // document.cookie = `cc-registered=true;max-age=31536000`;
       changeOutVideo();
       setTimeout(() => {
         location.replace(registerForm.firstElementChild.action);
@@ -48,7 +43,8 @@ const handleRegisterFormSubmission = () => {
   }
 
   if (registerForm) {
-    if (document.cookie.split('; ').find(row => row.startsWith('cc-registered'))) {
+    const ccRegistered = localStorage.getItem('cc-registered');
+    if (ccRegistered) {
       registerBox.classList.add('hidden');
       alreadyRegisteredBox.classList.remove('hidden');
       setTimeout(() => {
