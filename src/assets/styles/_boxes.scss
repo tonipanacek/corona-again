@@ -73,6 +73,13 @@
   }
 }
 
+.register  {
+  display: none;
+  @include respond-to('large') {
+    display: block;
+  }
+}
+
 .already-registered {
   display: none;
   @include respond-to('large') {

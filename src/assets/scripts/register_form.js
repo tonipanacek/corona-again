@@ -34,7 +34,6 @@ const handleRegisterFormSubmission = () => {
       body: new URLSearchParams(formData).toString()
     }).then(() => {
       localStorage.setItem('cc-registered', 'true');
-      // document.cookie = `cc-registered=true;max-age=31536000`;
       changeOutVideo();
       setTimeout(() => {
         location.replace(registerForm.firstElementChild.action);
@@ -52,6 +51,7 @@ const handleRegisterFormSubmission = () => {
       }, 7000);
       beginAgainBtn.addEventListener('click', handleClick);
     } else {
+      // registerBox.classList.remove('hidden');
       setTimeout(() => {
         registerBox.classList.remove('transparent');
       }, 7000)
