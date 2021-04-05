@@ -5,9 +5,9 @@
     <div data-video-id="{{ videoID }}" class="video-background video-experience" id="{{ divID }}" data-end-time="{{ endTime }}"></div>
 
     {% if divID === 'chapter-5' %}
-      <div class="cc-box more more-{{ divID }}">
+      <div class="cc-box more more-{{ divID }} hidden">
         <div class="close close-md"><img src="/assets/images/close.png" alt="close-button"></div>
-        <div class="form form-feedback hidden">
+        <div class="form form-feedback">
           <form action="/" name="feedback" method="POST" data-netlify="true">
             <h2>What kind of world do we want to live in? </h2>
             <p>enter a sentence that will get sent to wtf@corona-culture.org</p>
@@ -19,7 +19,7 @@
           </form>
           <a href="/">home</a>
         </div>
-        <div class="after-text">
+        <div class="after-text transparent hidden">
           <div>
             <p>Thank your for taking part in this journey!</p>
             <p>Stay tuned and join us for more.</p>

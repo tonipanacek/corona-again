@@ -70,6 +70,8 @@
   }
   &-feedback {
     height: 90%;
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
     a {
       color: black;
       text-decoration: none;
@@ -82,10 +84,10 @@
 
 .register {
   opacity: 1;
-  transition: opacity 0.3s ease;
+  transition: opacity 1.3s ease-in-out;
 }
 
 .transparent {
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 1.5s ease-in-out;
 }

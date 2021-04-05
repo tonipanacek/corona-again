@@ -29,7 +29,7 @@
   height: 20ch;
   z-index: 10;
   position: absolute;
-  transition: z-index 0.3s ease;
+  transition: z-index 0.3s ease-in-out;
   &-chapter-1 {
     top: 15%;
     right: 25%;
@@ -150,6 +150,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  opacity: 1;
+  transition: opacity 1.5s ease-in-out;
   > div {
     text-align: center;
   }
