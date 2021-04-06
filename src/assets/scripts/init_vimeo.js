@@ -8,7 +8,7 @@ const handleVimeo = () => {
     setTimeout(() => videoHeader.classList.add('fade-out'), 2000);
     const videoName = videoDiv.id;
     const endTime = videoDiv.dataset.endTime;
-    console.log(endTime);
+
     const player = new Player(videoName, {
         id: videoDiv.dataset.videoId,
         autoplay: true
@@ -22,7 +22,6 @@ const handleVimeo = () => {
           setTimeout(() => {
             goBtn.classList.remove('transparent');
           }, 1000);
-          // goBtn.querySelector('.form-feedback').classList.remove('transparent');
         } else {
           goBtn.classList.add('hidden');
           goBtn.classList.add('transparent');
