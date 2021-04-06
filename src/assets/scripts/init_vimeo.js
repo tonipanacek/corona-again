@@ -14,6 +14,7 @@ const handleVimeo = () => {
         autoplay: true
     });
     player.on('timeupdate', function(data) {
+      console.log(data.seconds)
       if (videoName === 'chapter-5') {
         if (data.seconds >= endTime) {
           player.pause()
