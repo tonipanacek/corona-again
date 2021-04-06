@@ -14,7 +14,7 @@ const handleRegisterFormSubmission = () => {
       videoElement.loop = true;
       videoElement.load();
       videoElement.play();
-    }, 500);
+    }, 1000);
   }
 
   const handleClick = (e) => {
@@ -51,7 +51,7 @@ const handleRegisterFormSubmission = () => {
       }, 7000);
       beginAgainBtn.addEventListener('click', handleClick);
     } else {
-      // registerBox.classList.remove('hidden');
+      registerBox.classList.remove('hidden');
       setTimeout(() => {
         registerBox.classList.remove('transparent');
       }, 7000)

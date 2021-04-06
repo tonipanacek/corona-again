@@ -30,6 +30,7 @@
   z-index: 10;
   position: absolute;
   transition: z-index 0.3s ease-in-out;
+  transition: opacity 1s ease-in-out;
   &-chapter-1 {
     top: 15%;
     right: 25%;
@@ -82,6 +83,7 @@
 
 .already-registered {
   display: none;
+  transition: opacity 1s ease-in-out;
   @include respond-to('large') {
     display: block;
   }

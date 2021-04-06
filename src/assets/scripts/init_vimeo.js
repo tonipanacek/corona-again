@@ -19,8 +19,13 @@ const handleVimeo = () => {
           player.pause()
         } else if (data.seconds >= 128) {
           goBtn.classList.remove('hidden');
+          setTimeout(() => {
+            goBtn.classList.remove('transparent');
+          }, 1000);
+          // goBtn.querySelector('.form-feedback').classList.remove('transparent');
         } else {
           goBtn.classList.add('hidden');
+          goBtn.classList.add('transparent');
         }
       } else {
         if (data.seconds >= endTime) {

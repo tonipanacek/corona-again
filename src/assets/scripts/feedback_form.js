@@ -14,6 +14,8 @@ const handleFeedbackForm = () => {
       setTimeout(() => {
         feedbackForm.classList.add('hidden');
         afterMessage.classList.remove('hidden');
+      }, 1000);
+      setTimeout(() => {
         afterMessage.classList.remove('transparent');
       }, 1500);
     }).catch((error) => alert(error))
