@@ -20,7 +20,6 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
     flex: 1 0 auto;
-    padding: 0 2rem;
     @include respond-to('large') {
       display: flex;
       flex-direction: row;
@@ -51,6 +50,9 @@ footer {
 }
 
 .social-icons {
+  width: 8ch;
+  display: flex;
+  justify-content: space-between;
   img {
     width: 30px;
   }

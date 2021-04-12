@@ -1,5 +1,20 @@
 import Player from '@vimeo/player';
 
+const initVimeo = () => {
+  const vimeoID = 532319055;
+  const videoDiv = document.querySelector('.video-experience');
+  // const videoHeader = document.querySelector('.experience-header');
+  if (videoDiv) {
+    const videoName = videoDiv.id;
+    const player = new Player(videoName, {
+      id: vimeoID,
+      autoplay: true
+    });
+
+    // player.on()
+  }
+}
+
 const handleVimeo = () => {
   const videoDiv = document.querySelector('.video-experience');
   const goBtn = document.querySelector('.more');
@@ -7,8 +22,9 @@ const handleVimeo = () => {
   if (videoDiv) {
     setTimeout(() => videoHeader.classList.add('fade-out'), 2000);
     const videoName = videoDiv.id;
-    const endTime = videoDiv.dataset.endTime;
+    const endTime = parseFloat(videoDiv.dataset.endTime);
 
+    console.log(endTime);
     const player = new Player(videoName, {
         id: videoDiv.dataset.videoId,
         autoplay: true
@@ -41,3 +57,4 @@ const handleVimeo = () => {
 }
 
 export { handleVimeo }
+

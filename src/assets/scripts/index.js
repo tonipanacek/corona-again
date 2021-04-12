@@ -6,6 +6,7 @@ import { toggleMobileMenu } from './mobile_menu.js';
 
 // initBarba();
 handleRegisterFormSubmission();
+// initVimeo();
 handleVimeo();
 toggleMobileMenu();
 handleFeedbackForm();
