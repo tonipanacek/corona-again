@@ -16,6 +16,10 @@ body {
   font-family: 'Source Code Pro', Courier, monospace;
 }
 
+.noscroll {
+  overflow: hidden;
+}
+
 .main {
   display: flex;
   flex-direction: column;
