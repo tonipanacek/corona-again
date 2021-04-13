@@ -10,7 +10,7 @@ footer {
   .social-icons {
     display: none;
     @include respond-to('large') {
-      display: block;
+      display: flex;
     }
   }
   .gdpr {
