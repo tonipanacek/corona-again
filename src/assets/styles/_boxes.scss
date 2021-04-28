@@ -90,6 +90,22 @@
   }
   #begin-again-btn {
     margin-top: 2rem;
+    &:hover {
+      color: white;
+      background: black;
+    }
+  }
+}
+
+.autoplay {
+  width: 45ch;
+  position: absolute;
+  top: 18%;
+  left: 14%;
+  transition: opacity 1.5s ease-in-out;
+  .autoplay-message {
+    padding: 2rem;
+    transition: opacity 1.5s ease-in-out;
   }
 }
 

@@ -1,6 +1,7 @@
 const handleRegisterFormSubmission = () => {
   const registerForm = document.querySelector(".form-register");
   const registerBox = document.querySelector('.register');
+  const autoplayBox = document.querySelector('.autoplay');
   const alreadyRegisteredBox = document.querySelector('.already-registered');
   const beginAgainBtn = document.querySelector('#begin-again-btn');
   const videoElement = document.querySelector('#digital-experience-bg-video');
@@ -46,15 +47,25 @@ const handleRegisterFormSubmission = () => {
     if (ccRegistered) {
       registerBox.classList.add('hidden');
       alreadyRegisteredBox.classList.remove('hidden');
+      autoplayBox.classList.remove('hidden');
       setTimeout(() => {
         alreadyRegisteredBox.classList.remove('transparent');
+        // autoplayBox.classList.remove('transparent');
       }, 7000);
+      setTimeout(() => {
+        autoplayBox.classList.remove('transparent');
+      }, 8000);
       beginAgainBtn.addEventListener('click', handleClick);
     } else {
       registerBox.classList.remove('hidden');
+      autoplayBox.classList.remove('hidden');
       setTimeout(() => {
         registerBox.classList.remove('transparent');
+        // autoplayBox.classList.remove('transparent');
       }, 7000)
+      setTimeout(() => {
+        autoplayBox.classList.remove('transparent');
+      }, 8000);
       registerForm.addEventListener("submit", handleSubmit);
     }
   }
