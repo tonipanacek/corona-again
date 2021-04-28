@@ -102,6 +102,7 @@
     grid-area: wtf;
     .image-container {
       img {
+        max-width: 82%;
         @include respond-to('medium') {
           padding: 0px;
         }
