@@ -1,0 +1,39 @@
+.program-link {
+  position: absolute;
+  top: 17%;
+  left: 8%;
+
+  .program-message {
+    padding: 2rem;
+    a {
+      padding: .5rem 1rem;
+      text-decoration: none;
+      color: black;
+      border: 2px solid black;
+      text-transform: uppercase;
+      &:hover {
+        color: white;
+        background: black;
+      }
+    }
+  }
+}
+
+.form-workshops {
+  width: 80ch;
+  height: 450px;
+  justify-content: center;
+  h2 {
+    text-transform: uppercase;
+  }
+  form {
+    width: 60ch;
+    select {
+      padding: 1rem;
+      font-family: inherit;
+      font-size: inherit;
+      max-width: 60ch;
+      border: 2px solid black;
+    }
+  }
+}

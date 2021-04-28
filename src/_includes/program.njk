@@ -1,0 +1,40 @@
+{% extends "./default.njk" %}
+
+{% block main %}
+
+<main class="main jc-center header-offset">
+  <div class="cc-box workshops">
+    <div class="close close-md"><img src="/assets/images/close.png" alt="close-button"></div>
+    <div class="form form-workshops">
+      <h1>Workshop Sign Up</h1>
+      <form action="/program" name="workshops" method="POST" data-netlify="true">
+        <input type="text" name="name" required placeholder="name*" class="form-input">
+        <input type="email" name="email" required placeholder="email*" class="form-input">
+        <select name="workshop" id="workshop-select" required>
+          <option value="">Workshop</option>
+          <option value="dog">Thursday // 29.04 // 10-13h & 17-20h: Fühlen in Gesellschaft with Museum für Werte</option>
+          <option value="cat">Thursday // 29.04 // 19h: Dose of Pleasure with Alvin Collantes</option>
+          <option value="hamster">Tuesday // 04.05 // 19h: Transmodernity with Halea Isabelle Kala and Lula Dahringer</option>
+          <option value="parrot">Thursday // 06.05 // 19h: Create the New World with Exit the Void</option>
+          <option value="spider">Thursday // 13.05 // 19h: Mental Health Support through the Corona Pandemic with Reginie Sunder Raj</option>
+          <option value="goldfish">Tuesday // 18.05 // 19h: Living With Cycles: From Cosmos to Body with Florence Devereux</option>
+          <option value="goldfish">Thursday // 20.05 // 19h: Offene Gesellschaft in Zeiten von Corona - Widerspruch oder Chance?</option>
+          <option value="goldfish">Tuesday // 25.05 // 19h: Sea-Watch - Im Spannungsfeld zwischen Hilflosigkeit und Aktivismus</option>
+          <option value="goldfish">Thursday // 27.05 // 19h: Das begehbare Mittelmeer – Immersive Installation von Sea-Watch</option>
+          <option value="goldfish">Saturday // 29.05 // 12h: Well-Beeing – Eine Exkursion in den Kosmos der Bienen von Machstatt</option>
+        </select>
+        <div class="submit-area">
+          <button type="submit" class="submit-button">submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="cc-box program-link">
+    <div class="close close-md"><img src="/assets/images/close.png" alt="close-button"></div>
+    <div class="form program-message">
+      <p>See our full program <a href="https://fb.me/e/dcrWsl5ty" target="_blank" id="program-btn">HERE</a></p>
+    </div>
+  </div>
+</main>
+{% endblock %}
