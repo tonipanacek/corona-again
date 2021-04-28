@@ -1,11 +1,36 @@
+.program-page {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 80vh;
+  padding: 2rem;
+  @include respond-to('large') {
+    min-height: calc(100vh - 88px);
+    align-items: center;
+    padding: 0;
+  }
+}
+
 .program-link {
-  position: absolute;
-  top: 17%;
-  left: 8%;
+  width: 100%;
+  @include respond-to('large') {
+    width: auto;
+    position: absolute;
+    top: 15%;
+    left: 8%;
+  }
 
   .program-message {
-    padding: 2rem;
+    padding: 1.5rem;
+    text-align: center;
+    @include respond-to('large') {
+      padding: 2rem;
+      text-align: left;
+    }
     a {
+      display: inline-block;
+      margin-top: 5px;
       padding: .5rem 1rem;
       text-decoration: none;
       color: black;
@@ -19,20 +44,32 @@
   }
 }
 
-.form-workshops {
-  width: 80ch;
+.workshops {
   height: 450px;
+  width: 100%;
+  @include respond-to('large') {
+    width: 80ch;
+  }
+}
+
+.form-workshops {
+  height: 90%;
   justify-content: center;
-  h2 {
+  align-items: center;
+  padding: 1rem;
+  h1 {
     text-transform: uppercase;
+    padding: 0 1rem;
+    text-align: center;
   }
   form {
-    width: 60ch;
+    width: 100%;
+    max-width: 40ch;
     select {
       padding: 1rem;
       font-family: inherit;
       font-size: inherit;
-      max-width: 60ch;
+      width: 100%;
       border: 2px solid black;
     }
   }
