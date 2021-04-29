@@ -103,6 +103,9 @@
   top: 16%;
   left: 6%;
   transition: opacity 1.5s ease-in-out;
+  .close img {
+    cursor: pointer;
+  }
   .autoplay-message {
     padding: 2rem;
     transition: opacity 1.5s ease-in-out;

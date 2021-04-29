@@ -44,6 +44,9 @@ const handleRegisterFormSubmission = () => {
 
   if (registerForm) {
     const ccRegistered = localStorage.getItem('cc-registered');
+    autoplayBox.querySelector('.close').addEventListener('click', () => {
+      autoplayBox.classList.add('hidden');
+    })
     if (ccRegistered) {
       registerBox.classList.add('hidden');
       alreadyRegisteredBox.classList.remove('hidden');
