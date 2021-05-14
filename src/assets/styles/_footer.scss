@@ -33,11 +33,16 @@ footer {
   .sponsors {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-direction: column;
     width: 66%;
     img {
       height: 10vh;
       object-fit: cover;
+    }
+    img:nth-child(2) {
+      object-fit: contain;
+      height: 6vh;
     }
     @include respond-to('large') {
       height: 10vh;
