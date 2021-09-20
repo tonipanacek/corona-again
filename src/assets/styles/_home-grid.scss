@@ -7,7 +7,7 @@
   @include respond-to('medium') {
     margin: 0 4rem;
     grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(15, 50px);
+    grid-template-rows: repeat(14, 49px);
     gap: 0px 0px;
     grid-template-areas:
       ". when when when when . . . . . . . . . . ."
@@ -19,12 +19,12 @@
       ". . cc cc cc cc cc cc cc . . about about about about about"
       ". . cc cc cc cc cc cc cc . . about about about about about"
       ". . . . . . . . . . . about about about about about"
-      // ". . . . . . . . . . . about about about about about"
       "wtf wtf wtf wtf wtf wtf . . . . . about about about about about"
       "wtf wtf wtf wtf wtf wtf . where where where . about about about about about"
       "wtf wtf wtf wtf wtf wtf . where where where . about about about about about"
       "wtf wtf wtf wtf wtf wtf . . . . . about about about about about"
       "wtf wtf wtf wtf wtf wtf . . . . . about about about about about"
+      ". . . . . . . . . . . about about about about about"
   }
    @include respond-to('xl') {
     margin: 0;
@@ -38,7 +38,6 @@
       ". . cc cc cc cc cc cc cc . . about about about about about"
       ". . cc cc cc cc cc cc cc . . about about about about about"
       ". . . . . . . . . . . about about about about about"
-      // ". . . . . . . . . . . about about about about about"
       "wtf wtf wtf wtf wtf wtf . . . . . about about about about about"
       "wtf wtf wtf wtf wtf wtf . where where where . about about about about about"
       "wtf wtf wtf wtf wtf wtf . where where where . about about about about about"
@@ -53,6 +52,9 @@
   @include respond-to('medium') {
     grid-area: about;
     margin-bottom: 0;
+  }
+  p {
+    margin: 0;
   }
 }
 
@@ -83,6 +85,7 @@
     grid-area: cc;
     .image-container {
       img {
+        max-width: 90%;
         @include respond-to('medium') {
           padding: 15px;
         }
@@ -111,10 +114,6 @@
           padding-top: 10px;
         }
       }
-      // background-image: url('/assets/images/wtf.png');
-      // background-size: contain;
-      // background-position: center;
-      // background-repeat: no-repeat;
     }
   }
 }
