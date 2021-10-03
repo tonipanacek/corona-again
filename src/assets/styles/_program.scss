@@ -45,7 +45,6 @@
 }
 
 .workshops {
-  height: 450px;
   width: 100%;
   @include respond-to('large') {
     width: 80ch;
