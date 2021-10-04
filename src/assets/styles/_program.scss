@@ -46,26 +46,26 @@
 
 .program-link2 {
   width: 100%;
+
+  img{
+      width: 100%;
+      max-width: 200px;
+      }
+
   @include respond-to('large') {
     width: auto;
     position: absolute;
     top: 10%;
-    right: 4%;
+    left: 4%;
   }
 
   .program-message {
     padding: 1.5rem;
     text-align: center;
-    img{
-      width: 100%;
-      max-width: 200px;
-      }
-  }
     @include respond-to('large') {
-      display: none;
-      }    
-
-    
+      padding: 2rem;
+      text-align: left;
+    }
     a {
       display: inline-block;
       margin-top: 5px;
@@ -81,6 +81,8 @@
     }
   }
 }
+
+
 
 .workshops {
   width: 100%;
