@@ -17,7 +17,7 @@
   @include respond-to('large') {
     width: auto;
     position: absolute;
-    top: 15%;
+    top: 150px;
     left: 8%;
   }
 
@@ -50,7 +50,7 @@
   @include respond-to('large') {
     width: auto;
     position: absolute;
-    top: 10%;
+    top: 120px;
     right: 4%;
   }
 
@@ -89,6 +89,8 @@
 .workshops {
   width: 100%;
   @include respond-to('large') {
+    position: absolute;
+    top: 450px;
     width: 80ch;
   }
 }
