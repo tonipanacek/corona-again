@@ -17,7 +17,9 @@
   @include respond-to('large') {
     width: auto;
     position: absolute;
+
     top: 250px;
+
     left: 3%;
   }
 
@@ -49,7 +51,9 @@
   @include respond-to('large') {
     width: auto;
     position: absolute;
+
     top: 350px;
+
     right: 5%;
   }
 
@@ -81,8 +85,10 @@
   @include respond-to('large') {
     width: 40vw;
     max-width: 800px;
+
     position: relative;
     top: 100px;
+
   }
 }
 
@@ -91,8 +97,10 @@
   @include respond-to('large') {
     width: 40vw;
     max-width: 800px;
+
     position: relative;
     top: 100px;
+
   }
 }
 
@@ -101,8 +109,10 @@
   @include respond-to('large') {
     width: 40vw;
     max-width: 800px;
+
     position: relative;
     top: 100px;
+
   }
  .form {
     padding: 10px;
