@@ -44,6 +44,38 @@
   }
 }
 
+.program-link2 {
+  width: 100%;
+  @include respond-to('large') {
+    width: auto;
+    position: absolute;
+    top: 10%;
+    right: 4%;
+  }
+
+  .program-message {
+    padding: 1.5rem;
+    text-align: center;
+    @include respond-to('large') {
+      padding: 2rem;
+      text-align: left;
+    }
+    a {
+      display: inline-block;
+      margin-top: 5px;
+      padding: .5rem 1rem;
+      text-decoration: none;
+      color: black;
+      border: 2px solid black;
+      text-transform: uppercase;
+      &:hover {
+        color: white;
+        background: black;
+      }
+    }
+  }
+}
+
 .workshops {
   width: 100%;
   @include respond-to('large') {
