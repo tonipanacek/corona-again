@@ -49,8 +49,8 @@
   @include respond-to('large') {
     width: auto;
     position: absolute;
-    top: 10%;
-    left: 30%;
+    top: 30%;
+    right: 5%;
   }
 
   .program-message {
@@ -79,30 +79,24 @@
 .workshops1 {
   width: 100%;
   @include respond-to('large') {
-    width: 70ch;
-    position: absolute;
-    top: 30%;
-    right: 10%;
+    width: 40vw;
+    max-width: 800px;
   }
 }
 
 .workshops2 {
   width: 100%;
   @include respond-to('large') {
-    width: auto;
-    position: absolute;
-    top: 67%;
-    right: 25%;
+    width: 40vw;
+    max-width: 800px;
   }
 }
 
 .workshops3 {
   width: 100%;
   @include respond-to('large') {
-    width: auto;
-    position: absolute;
-    bottom: 2%;
-    left: 10%;
+    width: 40vw;
+    max-width: 800px;
   }
  .form {
     padding: 10px;
