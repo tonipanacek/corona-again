@@ -17,8 +17,8 @@
   @include respond-to('large') {
     width: auto;
     position: absolute;
-    top: 15%;
-    left: 8%;
+    top: 20%;
+    left: 3%;
   }
 
   .program-message {
@@ -49,7 +49,7 @@
   @include respond-to('large') {
     width: auto;
     position: absolute;
-    top: 15%;
+    top: 8%;
     left: 20%;
   }
 
@@ -76,12 +76,36 @@
   }
 }
 
-.workshops {
+.workshops1 {
   width: 100%;
   @include respond-to('large') {
-    width: 80ch;
+    width: auto;
+    position: absolute;
+    top: 35%;
+    right: 10%;
   }
 }
+
+.workshops2 {
+  width: 100%;
+  @include respond-to('large') {
+    width: auto;
+    position: absolute;
+    top: 55%;
+    right: 15%;
+  }
+}
+
+.workshops3 {
+  width: 100%;
+  @include respond-to('large') {
+    width: auto;
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+  }
+}
+
 
 .form-workshops {
   height: 90%;
