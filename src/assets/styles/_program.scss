@@ -59,6 +59,13 @@
     @include respond-to('large') {
       padding: 2rem;
       text-align: left;
+      
+      img{
+      width: 100%;
+      max-width: 200px;
+      }
+      
+
     }
     a {
       display: inline-block;
