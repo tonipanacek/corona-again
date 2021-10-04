@@ -47,11 +47,6 @@
 .program-link2 {
   width: 100%;
 
-  img{
-      width: 100%;
-      max-width: 200px;
-      }
-
   @include respond-to('large') {
     width: auto;
     position: absolute;
@@ -60,8 +55,15 @@
   }
 
   .program-message {
+
+    img{
+      width: 100%;
+      max-width: 200px;
+    }
+
     padding: 1.5rem;
     text-align: center;
+
     @include respond-to('large') {
       padding: 2rem;
       text-align: left;
