@@ -252,6 +252,11 @@
     "social": "https://www.instagram.com/laser.upgrade"
   },
   {
+    "name": "Marco Borowski",
+    "url": "https://www.marcoborowski.de",
+    "social": "https://www.instagram.com/marcoborowski/"
+  },
+  {
     "name": "Marie Jayne Chanel",
     "url": "https://www.mariejaynechanel.com",
     "social": "https://www.instagram.com/mariejaynechanel/"
@@ -320,6 +325,11 @@
   {
     "name": "Oliver Holyoake",
     "social": "https://www.instagram.com/holyoakmusic00/"
+  },
+  {
+    "name": "Olivia Steele",
+    "url": "http://www.oliviasteele.com/ ",
+    "social": "https://www.instagram.com/steeleism/"
   },
   {
     "name": "Otto Peng",
@@ -421,6 +431,9 @@
     "name": "Uri Moss"
   },
   {
+    "name": "Viscat"
+  },
+  {
     "name": "VLK Berlin",
     "url": "https://www.vlk.berlin/",
     "social": "https://www.instagram.com/vlk.berlin/"
@@ -438,18 +451,5 @@
     "name": "Zusammenleben Willkommen",
     "url": "https://zusammenleben-willkommen.de/",
     "social": "https://www.instagram.com/zusammenlebenwillkommen/"
-  },
-  {
-    "name": "Olivia Steele",
-    "url": "http://www.oliviasteele.com/ ",
-    "social": "https://www.instagram.com/steeleism/"
-  },
-  {
-    "name": "Marco Borowski",
-    "url": "https://www.marcoborowski.de",
-    "social": "https://www.instagram.com/marcoborowski/"
-  },
-  {
-    "name": "Viscat"
   }
 ]
