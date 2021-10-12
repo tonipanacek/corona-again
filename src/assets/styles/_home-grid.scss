@@ -107,7 +107,7 @@
       img {
         max-width: 82%;
         @include respond-to('medium') {
-          padding: 0px;
+          padding: 5px;
         }
         @include respond-to('large') {
           padding: 5px;
