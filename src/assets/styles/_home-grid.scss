@@ -99,7 +99,7 @@
 }
 
 .wtf {
-  display: none;
+  display: block;
   @include respond-to('medium') {
     display: block;
     grid-area: wtf;
