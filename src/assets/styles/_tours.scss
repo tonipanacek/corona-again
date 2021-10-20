@@ -1,0 +1,136 @@
+.program-page {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 80vh;
+  padding: 2rem;
+  @include respond-to('large') {
+    min-height: calc(100vh - 88px);
+    align-items: center;
+    padding: 0;
+  }
+}
+
+.exhibition-link_tour {
+  width: 100%;
+  @include respond-to('large') {
+    width: auto;
+    position: absolute;
+    top: 120px;
+    left: 1%;
+  }
+
+  .program-message {
+    padding: 1.5rem;
+    text-align: center;
+    @include respond-to('large') {
+      padding: 2rem;
+      text-align: left;
+    }
+    a {
+      display: inline-block;
+      margin-top: 5px;
+      padding: .5rem 1rem;
+      text-decoration: none;
+      color: black;
+      border: 2px solid black;
+      text-transform: uppercase;
+      &:hover {
+        color: white;
+        background: black;
+      }
+    }
+  }
+}
+
+.exhibition-link2_tour {
+  width: 100%;
+  @include respond-to('large') {
+    width: auto;
+    position: absolute;
+    top: 300px;
+    right: 1%;
+  }
+
+  .program-message {
+    padding: 1.5rem;
+    text-align: center;
+    @include respond-to('large') {
+      padding: 2rem;
+      text-align: left;
+    }
+    a {
+      display: inline-block;
+      margin-top: 5px;
+      padding: .5rem 1rem;
+      text-decoration: none;
+      color: black;
+      border: 2px solid black;
+      text-transform: uppercase;
+      &:hover {
+        color: white;
+        background: black;
+      }
+    }
+  }
+}
+
+.workshops1 {
+  width: 100%;
+  @include respond-to('large') {
+    width: 40vw;
+    max-width: 800px;
+    position: relative;
+    top: 100px;
+  }
+}
+
+.workshops2 {
+  width: 100%;
+  @include respond-to('large') {
+    width: 40vw;
+    max-width: 800px;
+    position: relative;
+    top: 100px;
+  }
+}
+
+.tours {
+  width: 100%;
+  padding: 15px;
+  @include respond-to('large') {
+    width: 40vw;
+    max-width: 800px;
+    position: relative;
+    top: 100px;
+  }
+ .form {
+    padding: 10px;
+    border: 0;
+  }
+}
+
+
+.form-workshops {
+  height: 90%;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  h1 {
+    text-transform: uppercase;
+    padding: 0 1rem;
+    text-align: center;
+  }
+  form {
+    width: 100%;
+    max-width: 40ch;
+    select {
+      padding: 1rem;
+      font-family: inherit;
+      font-size: inherit;
+      width: 100%;
+      border: 2px solid black;
+    }
+  }
+}
