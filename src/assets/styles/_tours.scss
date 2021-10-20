@@ -4,7 +4,7 @@
   justify-content: center;
   flex-direction: column;
   min-height: 80vh;
-  padding: 2rem;
+  padding: 1rem;
   @include respond-to('large') {
     min-height: calc(100vh - 88px);
     align-items: center;
@@ -22,10 +22,10 @@
   }
 
   .program-message {
-    padding: 1.5rem;
+    padding: 1rem;
     text-align: center;
     @include respond-to('large') {
-      padding: 2rem;
+      padding: 1rem;
       text-align: left;
     }
     a {
@@ -54,16 +54,16 @@
   }
 
   .program-message {
-    padding: 1.5rem;
+    padding: 1rem;
     text-align: center;
     @include respond-to('large') {
-      padding: 2rem;
+      padding: 1rem;
       text-align: left;
     }
     a {
       display: inline-block;
       margin-top: 5px;
-      padding: .5rem 1rem;
+      padding: 1rem 1rem;
       text-decoration: none;
       color: black;
       border: 2px solid black;
