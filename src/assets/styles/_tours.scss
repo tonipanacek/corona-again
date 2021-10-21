@@ -97,7 +97,8 @@
 }
 
 .tours {
-  width: 100%;
+  argin: auto;
+  width: 90%;
   padding: 15px;
   @include respond-to('large') {
     width: 40vw;
