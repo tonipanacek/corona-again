@@ -100,7 +100,7 @@
   width: 70ch;
   padding: 15px;
   @include respond-to('large') {
-    width: 70ch;
+    width: 90%;
     max-width: 800px;
     position: relative;
     top: 650px;
