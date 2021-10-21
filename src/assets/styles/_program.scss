@@ -97,13 +97,13 @@
 
 .programm_tickets {
   margin: auto;
-  width: 70ch;
+  width: 90%;
   padding: 15px;
   @include respond-to('large') {
-    width: 90%;
+    width: 67ch;
     max-width: 800px;
     position: relative;
-    top: 650px;
+    top: 700px;
   }
  .form {
     padding: 10px;
