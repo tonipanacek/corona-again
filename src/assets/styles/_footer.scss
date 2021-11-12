@@ -38,10 +38,10 @@ sfooter {
     width: 66%;
     img {
       height: 10vh;
-      object-fit: scale-down;
+      object-fit: cover;
     }
     img:nth-child(2) {
-      object-fit: scale-down;
+      object-fit: contain;
       height: 6vh;
     }
     @include respond-to('large') {
