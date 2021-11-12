@@ -145,6 +145,22 @@
   }
 }
 
+.festival_tickets {
+  margin: auto;
+  width: 90%;
+  padding: 15px;
+  @include respond-to('large') {
+    width: 67ch;
+    max-width: 800px;
+    position: relative;
+    top: 900px;
+  }
+ .form {
+    padding: 10px;
+    border: 0;
+  }
+}
+
 .form-workshops {
   height: 90%;
   justify-content: center;
