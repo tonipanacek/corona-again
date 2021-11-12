@@ -1,4 +1,4 @@
-footer {
+sfooter {
   display: flex;
   align-items: center;
   padding: 1rem 2rem;
@@ -38,10 +38,10 @@ footer {
     width: 66%;
     img {
       height: 10vh;
-      object-fit: cover;
+      object-fit: scale-down;
     }
     img:nth-child(2) {
-      object-fit: contain;
+      object-fit: scale-down;
       height: 6vh;
     }
     @include respond-to('large') {
